@@ -1,0 +1,26 @@
+[
+    {
+        "customerId": "035091000000",
+        "accountType": "SAVING",
+        "accountNumber": "111111",
+        "balance": 150000000
+    },
+    {
+        "customerId": "035091000000",
+        "accountType": "LOAN",
+        "accountNumber": "222222",
+        "balance": 10000000
+    },
+    {
+        "customerId": "035099123456",
+        "accountType": "SAVING",
+        "accountNumber": "333333",
+        "balance": 550000000
+    },
+    {
+        "customerId": "035099123456",
+        "accountType": "SAVING",
+        "accountNumber": "654321",
+        "balance": 20000000
+    }
+]
