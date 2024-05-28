@@ -1,10 +1,7 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Map;
 
 import models.FruitShop.FruitShop;
 import models.Bill.Bill;
-import models.Fruit.Fruit;
 import services.OptionsService;
 import services.WriteLogService;
 import utils.PrintDividerUtil;
