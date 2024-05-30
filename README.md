@@ -1,3 +1,7 @@
+## Log files in the "logs" folder what includes txt files
+
+- `logs`: the folder to read logs each time run app
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
