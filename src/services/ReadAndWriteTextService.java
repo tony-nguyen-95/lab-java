@@ -10,19 +10,19 @@ public class ReadAndWriteTextService {
     private static final String INPUT_DIRECTORY = "input-files";
     private static final String INPUT_FILE_NAME = "input.txt";
 
-    public static StringBuilder readFileToStringBuilder() {
+    public static String readFileToString() {
         String filePath = INPUT_DIRECTORY + File.separator + INPUT_FILE_NAME;
 
         StringBuilder stringBuilder = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                stringBuilder.append(line).append(System.lineSeparator());
+        try (FileReader fileReader = new FileReader(filePath)) {
+            int character;
+            while ((character = fileReader.read()) != -1) {
+                stringBuilder.append((char) character);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return stringBuilder;
+        return stringBuilder.toString();
     }
 
     public static boolean writeStringToFile(String content) {

@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
+import services.NormalizeTextService;
 import services.OptionsService;
+import services.ReadAndWriteTextService;
 import services.WriteLogService;
 import utils.PrintDividerUtil;
 
@@ -17,11 +19,10 @@ public class Main {
             System.out.println("| " + APP_NAME);
             PrintDividerUtil.printLine();
 
-            StringBuilder a = new StringBuilder();
+            String result = NormalizeTextService
+                    .normalizeString(ReadAndWriteTextService.readFileToString());
 
-            test(a);
-
-            System.out.println(a.toString());
+            System.out.println(result);
 
             /* Main features */
             while (true) {
@@ -41,52 +42,7 @@ public class Main {
                     break;
                 }
 
-                /* Add fruit list */
                 if (mainOptions.getSelectedOption() == 1) {
-                    // // Show existing list
-                    // shop.showFruitsInShop();
-                    // PrintDividerUtil.printLineShort();
-
-                    // while (true) {
-                    // // Create new variables
-                    // String nameNewFruit = "";
-                    // String originNewFruit = "";
-                    // Double priceNewFruit = 0.0;
-                    // Integer quantityNewFruit = 0;
-
-                    // // Change variables from inputs
-                    // System.out.print("Nhập tên trái cây mới: ");
-                    // nameNewFruit = scanner.nextLine();
-                    // WriteLogService.logInput(nameNewFruit);
-
-                    // System.out.print("Nhập xuất xứ trái cây mới: ");
-                    // originNewFruit = scanner.nextLine();
-                    // WriteLogService.logInput(originNewFruit);
-
-                    // System.out.print("Nhập giá trái cây mới: ");
-                    // priceNewFruit = scanner.nextDouble();
-                    // WriteLogService.logInput(priceNewFruit.toString());
-                    // scanner.nextLine(); // Consume the newline character
-
-                    // System.out.print("Nhập số lượng trái cây mới: ");
-                    // quantityNewFruit = scanner.nextInt();
-                    // WriteLogService.logInput(quantityNewFruit.toString());
-                    // scanner.nextLine(); // Consume the newline character
-
-                    // shop.addFruit(nameNewFruit, originNewFruit, priceNewFruit, quantityNewFruit);
-
-                    // System.out.println("Thêm thành công, bạn có muốn tiếp tục (Y/N)?");
-                    // String isNext = scanner.next().toLowerCase();
-                    // WriteLogService.logInput(isNext);
-                    // scanner.nextLine(); // Consume the newline character
-
-                    // if (isNext.equalsIgnoreCase("y")) {
-                    // continue;
-                    // } else {
-                    // shop.showFruitsInShop();
-                    // break;
-                    // }
-                    // }
 
                     continue;
                 }
@@ -105,7 +61,4 @@ public class Main {
         return APP_NAME;
     }
 
-    public static void test(StringBuilder b) {
-        b.append("St");
-    }
 }
