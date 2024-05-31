@@ -19,11 +19,6 @@ public class Main {
             System.out.println("| " + APP_NAME);
             PrintDividerUtil.printLine();
 
-            String result = NormalizeTextService
-                    .normalizeString(ReadAndWriteTextService.readFileToString());
-
-            System.out.println(result);
-
             /* Main features */
             while (true) {
                 OptionsService mainOptions = new OptionsService("Chức năng chính",
@@ -43,6 +38,14 @@ public class Main {
                 }
 
                 if (mainOptions.getSelectedOption() == 1) {
+                    System.out.println("Đọc văn bản từ file input...");
+                    String result = NormalizeTextService
+                            .normalizeString(ReadAndWriteTextService.readFileToString());
+
+                    System.out.println("Ghi kết quả vào file output...");
+                    ReadAndWriteTextService.writeStringToFile(result);
+
+                    System.out.println("Chuẩn hoá thành công!");
 
                     continue;
                 }
