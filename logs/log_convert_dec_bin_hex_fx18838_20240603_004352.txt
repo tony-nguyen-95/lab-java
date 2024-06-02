@@ -1,0 +1,151 @@
++------------+------------------------------+------------+
+| CONVERT_DEC_BIN_HEX_FX18838
++------------+------------------------------+------------+
+** Chức năng chính **
+| 1. Từ Nhị phân sang Thập phân
+| 2. Từ Nhị phân sang Thập lục phân
+| 3. Từ Thập lục phân sang Thập phân
+| 4. Từ Thập lục phân sang Nhị phân
+| 5. Từ Thập phân sang Thập lục phân
+| 6. Từ Thập phân sang Nhị phân
+| 0. Thoát
+-> Chọn chức năng chính: 1
++------------+------------------------------+------------+
+Nhập số nhị phân đầu vào:
+1011000111
+Quá trình tính toán chuyển đổi Nhị phân thành Thập phân:
+1x2^0 + 1x2^1 + 1x2^2 + 0x2^3 + 0x2^4 + 0x2^5 + 1x2^6 + 1x2^7 + 0x2^8 + 1x2^9 = 711
+Kết quả: 1011000111 (BIN) = 711 (DEC)
++------------+------------------------------+------------+
+** Chức năng chính **
+| 1. Từ Nhị phân sang Thập phân
+| 2. Từ Nhị phân sang Thập lục phân
+| 3. Từ Thập lục phân sang Thập phân
+| 4. Từ Thập lục phân sang Nhị phân
+| 5. Từ Thập phân sang Thập lục phân
+| 6. Từ Thập phân sang Nhị phân
+| 0. Thoát
+-> Chọn chức năng chính: 2
++------------+------------------------------+------------+
+Nhập số nhị phân đầu vào:
+11110111010111
+Tạo mẫu mỗi 4 bits...
+Mẫu đầu vào theo nhóm 4 bits: 0011110111010111
+Quá trình tính toán chuyển đổi Nhị phân thành Thập lục phân:
+Chuyển đổi nhóm 4 bits 0011 thành: 3
+Chuyển đổi nhóm 4 bits 1101 thành: D
+Chuyển đổi nhóm 4 bits 1101 thành: D
+Chuyển đổi nhóm 4 bits 0111 thành: 7
+Kết quả: 11110111010111 (BIN) = 3DD7 (HEX)
++------------+------------------------------+------------+
+** Chức năng chính **
+| 1. Từ Nhị phân sang Thập phân
+| 2. Từ Nhị phân sang Thập lục phân
+| 3. Từ Thập lục phân sang Thập phân
+| 4. Từ Thập lục phân sang Nhị phân
+| 5. Từ Thập phân sang Thập lục phân
+| 6. Từ Thập phân sang Nhị phân
+| 0. Thoát
+-> Chọn chức năng chính: 3
++------------+------------------------------+------------+
+Nhập số thập lục phân đầu vào:
+4faefa8
+Quá trình tính toán chuyển đổi Thập lục phân thành Nhị phân:
+Chuyển đổi 4 thành nhóm 4 bits: 0100
+Chuyển đổi F thành nhóm 4 bits: 1111
+Chuyển đổi A thành nhóm 4 bits: 1010
+Chuyển đổi E thành nhóm 4 bits: 1110
+Chuyển đổi F thành nhóm 4 bits: 1111
+Chuyển đổi A thành nhóm 4 bits: 1010
+Chuyển đổi 8 thành nhóm 4 bits: 1000
+Kết quả: 4faefa8 (HEX) = 0100111110101110111110101000 (BIN)
++------------+------------------------------+------------+
+** Chức năng chính **
+| 1. Từ Nhị phân sang Thập phân
+| 2. Từ Nhị phân sang Thập lục phân
+| 3. Từ Thập lục phân sang Thập phân
+| 4. Từ Thập lục phân sang Nhị phân
+| 5. Từ Thập phân sang Thập lục phân
+| 6. Từ Thập phân sang Nhị phân
+| 0. Thoát
+-> Chọn chức năng chính: 4
++------------+------------------------------+------------+
+Nhập số thập lục phân đầu vào:
+4f6719abcd
+Chuyển đổi thành Nhị phân trước
+Quá trình tính toán chuyển đổi Thập lục phân thành Nhị phân:
+Chuyển đổi 4 thành nhóm 4 bits: 0100
+Chuyển đổi F thành nhóm 4 bits: 1111
+Chuyển đổi 6 thành nhóm 4 bits: 0110
+Chuyển đổi 7 thành nhóm 4 bits: 0111
+Chuyển đổi 1 thành nhóm 4 bits: 0001
+Chuyển đổi 9 thành nhóm 4 bits: 1001
+Chuyển đổi A thành nhóm 4 bits: 1010
+Chuyển đổi B thành nhóm 4 bits: 1011
+Chuyển đổi C thành nhóm 4 bits: 1100
+Chuyển đổi D thành nhóm 4 bits: 1101
+Cuối cùng, chuyển Nhị phân sang Thập phân
+Quá trình tính toán chuyển đổi Nhị phân thành Thập phân:
+1x2^0 + 0x2^1 + 1x2^2 + 1x2^3 + 0x2^4 + 0x2^5 + 1x2^6 + 1x2^7 + 1x2^8 + 1x2^9 + 0x2^10 + 1x2^11 + 0x2^12 + 1x2^13 + 0x2^14 + 1x2^15 + 1x2^16 + 0x2^17 + 0x2^18 + 1x2^19 + 1x2^20 + 0x2^21 + 0x2^22 + 0x2^23 + 1x2^24 + 1x2^25 + 1x2^26 + 0x2^27 + 0x2^28 + 1x2^29 + 1x2^30 + 0x2^31 + 1x2^32 + 1x2^33 + 1x2^34 + 1x2^35 + 0x2^36 + 0x2^37 + 1x2^38 + 0x2^39 = 1729735708
+Kết quả: 4f6719abcd (HEX) = 1729735708 (DEC)
++------------+------------------------------+------------+
+** Chức năng chính **
+| 1. Từ Nhị phân sang Thập phân
+| 2. Từ Nhị phân sang Thập lục phân
+| 3. Từ Thập lục phân sang Thập phân
+| 4. Từ Thập lục phân sang Nhị phân
+| 5. Từ Thập phân sang Thập lục phân
+| 6. Từ Thập phân sang Nhị phân
+| 0. Thoát
+-> Chọn chức năng chính: 5
++------------+------------------------------+------------+
+Nhập số thập phân đầu vào:
+716255
+Quá trình tính toán chuyển đổi Thập phân thành Thập lục phân:
+716255 : 16 = 44765 remainder 15
+44765 : 16 = 2797 remainder 13
+2797 : 16 = 174 remainder 13
+174 : 16 = 10 remainder 14
+10 : 16 = 0 remainder 10
+Kết quả: 716255 (DEC) = AEDDF (HEX)
++------------+------------------------------+------------+
+** Chức năng chính **
+| 1. Từ Nhị phân sang Thập phân
+| 2. Từ Nhị phân sang Thập lục phân
+| 3. Từ Thập lục phân sang Thập phân
+| 4. Từ Thập lục phân sang Nhị phân
+| 5. Từ Thập phân sang Thập lục phân
+| 6. Từ Thập phân sang Nhị phân
+| 0. Thoát
+-> Chọn chức năng chính: 6
++------------+------------------------------+------------+
+Nhập số thập phân đầu vào:
+12526
+Quá trình tính toán chuyển đổi Thập phân thành Nhị phân:
+12526 : 2 = 6263 remainder 0
+6263 : 2 = 3131 remainder 1
+3131 : 2 = 1565 remainder 1
+1565 : 2 = 782 remainder 1
+782 : 2 = 391 remainder 0
+391 : 2 = 195 remainder 1
+195 : 2 = 97 remainder 1
+97 : 2 = 48 remainder 1
+48 : 2 = 24 remainder 0
+24 : 2 = 12 remainder 0
+12 : 2 = 6 remainder 0
+6 : 2 = 3 remainder 0
+3 : 2 = 1 remainder 1
+1 : 2 = 0 remainder 1
+Kết quả: 12526 (DEC) = 11000011101110 (BIN)
++------------+------------------------------+------------+
+** Chức năng chính **
+| 1. Từ Nhị phân sang Thập phân
+| 2. Từ Nhị phân sang Thập lục phân
+| 3. Từ Thập lục phân sang Thập phân
+| 4. Từ Thập lục phân sang Nhị phân
+| 5. Từ Thập phân sang Thập lục phân
+| 6. Từ Thập phân sang Nhị phân
+| 0. Thoát
+-> Chọn chức năng chính: 0
++------------+------------------------------+------------+
+End!
